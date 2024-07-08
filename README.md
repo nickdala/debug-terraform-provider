@@ -13,6 +13,22 @@ cd $GOPATH/src/github.com/hashicorp
 git clone git@github.com:nickdala/terraform-provider-azuread.git  
 ```
 
+Build the provider
+
+```
+cd /Users/nick/go/src/github.com/hashicorp/terraform-provider-azuread
+make tools
+make build
+make test
+```
+
+Build for debugging
+
+```
+go build -gcflags="all=-N -l" -trimpath -o terraform-provider-azuread
+```
+
+
 create `.terraformrc` in home directory
 
 ```terraform
