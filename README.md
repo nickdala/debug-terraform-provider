@@ -6,7 +6,12 @@ export GOPATH
 export GOPATH=~/go
 ```
 
-clone repo to $GOPATH/src/github.com/hashicorp/terraform-provider-azuread
+clone repo to $GOPATH/src/github.com/hashicorp
+
+```
+cd $GOPATH/src/github.com/hashicorp
+git clone git@github.com:nickdala/terraform-provider-azuread.git  
+```
 
 create `.terraformrc` in home directory
 
